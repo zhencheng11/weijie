@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#e5e5e5"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.bill.ActWSBillItemDetail">
+
+    <include layout="@layout/head_title_main" />
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <so.orion.slidebar.GBSlideBar
+            android:id="@+id/gbslidebar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            app:gbs_anchor_height="15dp"
+            app:gbs_anchor_width="15dp"
+            app:gbs_background="#e0e0e0"
+            app:gbs_paddingBottom="40dp"
+            app:gbs_placeholder_width="10dp"
+            app:gbs_placeholder_height="10dp"
+            app:gbs_paddingLeft="15dp"
+            app:gbs_paddingRight="15dp"
+            app:gbs_paddingTop="15dp"
+            app:gbs_textSize="14sp"
+            app:gbs_text_margin="8dp"
+            app:gbs_textColor="#666" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/lingLay"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"></LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/bill_detail_stateId"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待支付" />
+
+        <TextView
+            android:id="@+id/bill_detail_timeId"
+            android:textSize="20sp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(今天：12:39)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="23dp">
+        <TextView
+            android:layout_marginBottom="3dp"
+            android:textSize="17sp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请在15分钟内完成支付"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/bill_detail_allMoney1Id"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="88元" />
+
+        <TextView
+            android:id="@+id/bill_detail_shengYuTime1Id"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付剩余时间：12:39:00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/act_wsbill_detil_lay_cancel_billId"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bill_shape_left"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消订单" />
+
+        <TextView
+            android:id="@+id/act_wsbill_detil_lay_pay_billId"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bill_shape_right"
+            android:textSize="20sp"
+            android:textColor="#ffbb33"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即支付" />
+    </LinearLayout>
+    <!---->
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/bill_detail_shopNameId"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="#333333"
+            android:text="BHG生活超市"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:background="#e5e5e5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></LinearLayout>
+
+        <vmediacn.com.ui.NoScollListView
+            android:id="@+id/bill_detail_goodsListViewId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </vmediacn.com.ui.NoScollListView>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:background="#e5e5e5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="配送费" />
+
+            <TextView
+                android:id="@+id/bill_detail_frightId"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5元" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/bill_detail_allMoney2Id"
+                android:layout_marginRight="5dp"
+                android:textColor="#ff5d5d"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="总计：88元"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#e5e5e5"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单详情"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单号码："/>
+            <TextView
+                android:id="@+id/bill_detail_bill_codeId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="62222222222"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单时间："/>
+            <TextView
+                android:id="@+id/bill_detail_bill_timeId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2013-11-11 12:40:45"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收货姓名："/>
+            <TextView
+                android:id="@+id/bill_detail_shouHuoNameId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网而出"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号码："/>
+            <TextView
+                android:id="@+id/bill_detail_telePhoneId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13717899174"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收货地址："/>
+            <TextView
+                android:id="@+id/bill_detail_addressId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北京市朝阳区豆各庄东村创意文化园"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

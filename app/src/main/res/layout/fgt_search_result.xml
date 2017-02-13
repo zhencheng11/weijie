@@ -1,0 +1,68 @@
+<LinearLayout
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.find.FindFgtSearchResult">
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="23sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="距离" />
+        <View
+            android:background="#e5e5e5"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="23sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="人气" />
+        <View
+            android:background="#e5e5e5"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="23sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="评价" />
+        <View
+            android:background="#e5e5e5"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
+    </LinearLayout>
+    <View
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+<ListView
+    android:divider="#eeeeee"
+    android:footerDividersEnabled="false"
+    android:headerDividersEnabled="false"
+    android:background="#ffffff"
+    android:layout_marginTop="20dp"
+    android:id="@+id/fgt_search_listViewId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:dividerHeight="10dp"></ListView>
+
+</LinearLayout>

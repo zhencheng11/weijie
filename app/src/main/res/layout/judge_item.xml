@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<vmediacn.com.ui.CircleImageView
+    android:layout_margin="5dp"
+    android:id="@+id/judge_item_photoId"
+    android:layout_width="50dp"
+    android:src="@mipmap/user"
+    android:layout_height="50dp" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/judge_item_photoId"
+        android:id="@+id/judge_item_nameId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="科比"/>
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/judge_item_timeId"
+        android:layout_marginRight="5dp"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/judge_item_photoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3333333"/>
+    <TextView
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/judge_item_photoId"
+        android:layout_below="@+id/judge_item_timeId"
+        android:id="@+id/judge_item_contentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="急急急急急急斤斤计较急急急"/>
+</RelativeLayout>

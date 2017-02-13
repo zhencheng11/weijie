@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="15dp"
+    android:background="#e5e5e5"/>
+    <RadioGroup
+        android:id="@+id/find_shop_detail_shop_judge_groupId"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/find_shop_detail_shop_judge_allId"
+            android:button="@null"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="#ff5d5d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部（757）"/>
+        <RadioButton
+            android:id="@+id/find_shop_detail_shop_judge_goodJudgeId"
+            android:button="@null"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="好评（222）"/>
+
+        <RadioButton
+            android:id="@+id/find_shop_detail_shop_judge_midJudgeId"
+            android:button="@null"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中评（222）"/>
+
+        <RadioButton
+            android:id="@+id/find_shop_detail_shop_judge_badJudgeId"
+            android:button="@null"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="差评（222）"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="只显示有文字内容的评价"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"></LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/find_shop_detail_shop_judge_listViewId"></ListView>
+</LinearLayout>

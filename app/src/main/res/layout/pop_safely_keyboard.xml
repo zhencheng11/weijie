@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/keyboard_parentLayId"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b0000000">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/de_action_white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/pop_safely_keyboard_input_key"
+                android:gravity="center_horizontal"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/line"/>
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+        <LinearLayout
+            android:background="@drawable/safekey_board_lay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <View
+                android:background="#c9c9ca"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/pop_safely_keyboard_tv1"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="#000000" />
+
+            <View
+                android:background="#e5e5e5"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/pop_safely_keyboard_tv2"
+                android:textSize="30dp"
+                android:textColor="#000000"/>
+            <View
+                android:background="#e5e5e5"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/pop_safely_keyboard_tv3"
+                android:textSize="30dp"
+                android:textColor="#000000"/>
+            <View
+                android:background="#e5e5e5"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/pop_safely_keyboard_tv4"
+                android:textSize="30dp"
+                android:textColor="#000000"/>
+            <View
+                android:background="#e5e5e5"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/pop_safely_keyboard_tv5"
+                android:textSize="30dp"
+                android:textColor="#000000"/>
+            <View
+                android:background="#e5e5e5"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/pop_safely_keyboard_tv6"
+                android:textSize="30dp"
+                android:textColor="#000000"/>
+            <View
+                android:background="#c9c9ca"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp">
+
+            <TableLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/pop_safely_keyboard"
+                android:background="@color/line">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/line"
+                    android:padding="0.5dp">
+                    <Button android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/pop_safely_keyboard_btn1"
+                        android:text="1"
+                        android:textSize="30dp"
+                        android:background="#ffffff"
+                        android:textColor="#000000"/>
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/line"/>
+                    <Button android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/pop_safely_keyboard_btn2"
+                        android:text="2"
+                        android:textSize="30dp"
+                        android:background="#ffffff"
+                        android:textColor="#000000"/>
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/line"/>
+                    <Button android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/pop_safely_keyboard_btn3"
+                        android:text="3"
+                        android:textSize="30dp"
+                        android:background="#ffffff"
+                        android:textColor="#000000"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/line"
+                    android:padding="0.5dp">
+                    <Button android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/pop_safely_keyboard_btn4"
+                        android:text="4"
+                        android:textSize="30dp"
+                        android:background="#ffffff"
+                        android:textColor="#000000"/>
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/line"/>
+                    <Button android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/pop_safely_keyboard_btn5"
+                        android:text="5"
+                        android:textSize="30dp"
+                        android:background="#ffffff"
+                        android:textColor="#000000"/>
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/line"/>
+                    <Button android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/pop_safely_keyboard_btn6"
+                        android:text="6"
+                        android:textSize="30dp"
+                        android:background="#ffffff"
+                        android:textColor="#000000"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/line"
+                    android:padding="1dp">
+                    <Button android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/pop_safely_keyboard_btn7"
+                        android:text="7"
+                        android:textSize="30dp"
+                        android:background="#ffffff"
+                        android:textColor="#000000"/>
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/line"/>
+                    <Button android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/pop_safely_keyboard_btn8"
+                        android:text="8"
+                        android:textSize="30dp"
+                        android:background="#ffffff"
+                        android:textColor="#000000"/>
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/line"/>
+                    <Button android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/pop_safely_keyboard_btn9"
+                        android:text="9"
+                        android:textSize="30dp"
+                        android:background="#ffffff"
+                        android:textColor="#000000"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/line">
+                    <Button android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/pop_safely_keyboard_diss"
+                        android:text="退出"
+                        android:textSize="25dp"
+                        android:background="@color/line"
+                        android:textColor="#000000"/>
+                    <Button android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/pop_safely_keyboard_btn0"
+                        android:text="0"
+                        android:textSize="30dp"
+                        android:background="#ffffff"
+                        android:textColor="#000000"/>
+                    <Button android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/pop_safely_keyboard_back"
+                        android:text="回退"
+                        android:textSize="25dp"
+                        android:background="@color/line"
+                        android:textColor="#000000"/>
+                </TableRow>
+            </TableLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/pop_safely_keyboard_bar"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pop_safely_keyboard_verification"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/pop_safely_keyboard_verification"
+                    android:visibility="gone"
+                    android:textColor="#000000"/>
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+

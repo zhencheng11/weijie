@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/popup3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/find_item2_tejiayouhuiId"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#ffbb33"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="特价优惠"/>
+        <LinearLayout
+            android:background="#ffbb33"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/find_item2_xiadanlijianId"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#ffbb33"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="下单立减"/>
+        <LinearLayout
+            android:background="#ffbb33"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/find_item2_zhengpingyouhuiId"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#ffbb33"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="赠品优惠"/>
+        <LinearLayout
+            android:background="#ffbb33"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/find_item2_mianfeipeisongId"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#ffbb33"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="免费配送"/>
+        <LinearLayout
+            android:background="#ffbb33"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

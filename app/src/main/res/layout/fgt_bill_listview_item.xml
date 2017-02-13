@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:id="@+id/fgt_bill_listView_item_shopLayId"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#666666"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:text="BHG生活超市"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fgt_bill_listView_item_shopNameId"/>
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/disclosure_arrow"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/fgt_bill_listView_item_bill_stateId"
+            android:textColor="#999999"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待支付"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"></LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fgt_bill_listView_item_bill_handle_shopLay"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_alignBottom="@+id/fgt_bill_listView_item_bill_shopLalyId"
+            android:id="@+id/fgt_bill_listView_item_shopPhotoId"
+            android:src="@drawable/mdl"
+            android:layout_margin="10dp"
+            android:layout_width="80dp"
+            android:layout_height="100dp" />
+        <LinearLayout
+            android:id="@+id/fgt_bill_listView_item_bill_shopLalyId"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/fgt_bill_listView_item_shopPhotoId"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/fgt_bill_listView_item_shopProductNameId"
+                android:text="加拿大北极虾500g等两件商品"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#999999"
+                android:id="@+id/fgt_bill_listView_item_bill_timeId"
+                android:text="加拿大北极虾500g等两件商品"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/fgt_bill_listView_item_bill_moneyId"
+                android:layout_marginTop="5dp"
+                android:textColor="#ff5d5d"
+                android:textSize="23sp"
+                android:text="¥23.9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/fgt_bill_listView_item_bill_handle_leftId"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="取消订单"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#e5e5e5"/>
+
+        <TextView
+            android:id="@+id/fgt_bill_listView_item_bill_handle_rightId"
+            android:textColor="#ff5d5d"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="立即支付"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"></LinearLayout>
+
+
+</LinearLayout>

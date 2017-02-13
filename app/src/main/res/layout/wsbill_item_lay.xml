@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/wsbill_item_lay_nameId"
+            android:layout_marginLeft="5dp"
+            android:text="康师傅红烧牛肉面"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/wsbill_item_lay_countId"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="x4"
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥"/>
+        <TextView
+            android:id="@+id/wsbill_item_lay_allMoneyId"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:text="20元"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

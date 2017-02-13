@@ -1,0 +1,18 @@
+<FrameLayout
+    android:background="#e5e5e5"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vmediacn.com.fragment.mine.FgtCollectionShop">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:headerDividersEnabled="true"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fgt_collection_shop_listViewId" />
+
+</FrameLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:background="#ff5d5d"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:id="@+id/head_title_view_backIgId"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/bg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@+id/head_title_view_backIgId"
+            android:id="@+id/head_title_view_cancelId"
+            android:gravity="center_vertical|bottom"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"/>
+        <TextView
+            android:layout_toRightOf="@+id/head_title_view_cancelId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="通知商户中"
+            android:id="@+id/head_title_view_textId"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/pop_notification_t1Id"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在通知您身边的"/>
+    <TextView
+        android:layout_toRightOf="@+id/pop_notification_t1Id"
+        android:id="@+id/pop_notification_size"
+        android:textColor="#ff5d5d"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:textSize="19sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"/>
+
+    <TextView
+        android:layout_toRightOf="@+id/pop_notification_size"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="家商户，请稍等.."/>
+    </RelativeLayout>
+</LinearLayout>

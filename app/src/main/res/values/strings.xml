@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">微街</string>
+    <string name="login_tip">微影钱包用户可以直接使用微影钱包账户登录</string>
+    <string name="login_phonumber">手机号</string>
+    <string name="login_password">密码</string>
+    <string name="login_verifationcode">验证码</string>
+    <string name="login_get_code">获取</string>
+    <string name="login_login">登录</string>
+    <string name="login_forger_password">忘记密码</string>
+    <string name="please_input_phone_number">请输入账号</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="please_input_verification_code">请输入验证码</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_act_wei_jie_product_detail">ActWeiJieProductDetail</string>
+    <string name="pop_safely_keyboard_input_key">请输入支付密码</string>
+    <string name="pop_safely_keyboard_verification">正在验证</string>
+
+    <string name="header_hint_refresh_normal">下拉刷新</string>
+    <string name="header_hint_refresh_ready">松开刷新数据</string>
+    <string name="header_hint_refresh_loading">正在加载...&#8230;</string>
+    <string name="header_hint_refresh_time">上次更新时间：</string>
+    <string name="footer_hint_load_normal">加载更多..</string>
+    <string name="footer_hint_load_ready">松开载入更多</string>
+</resources>

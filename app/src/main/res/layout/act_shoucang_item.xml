@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/act_shoucang_item_reLayId"
+        android:background="@drawable/coupon_blue"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        >
+        <TextView
+            android:id="@+id/act_shoucang_item_contenId"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="¥ 50 元代金券"
+            />
+
+        <TextView
+            android:id="@+id/act_shoucang_item_timeId"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="有限时间：2016.4.25-2016.8.8"
+            />
+    </RelativeLayout>
+</LinearLayout>

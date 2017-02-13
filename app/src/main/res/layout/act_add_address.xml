@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="vmediacn.com.activity.mine.AddAddress">
+
+    <include layout="@layout/head_title_main" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#e5e5e5"></LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系人"/>
+        <EditText
+            android:id="@+id/act_add_address_nameId"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"
+            android:hint="请输入你的真实姓名"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e5e5e5"></LinearLayout>
+    <RadioGroup
+        android:id="@+id/act_add_address_groupId"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/act_add_address_manId"
+            android:text="先生"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:layout_marginLeft="20dp"
+            android:id="@+id/act_add_address_womanId"
+            android:text="女士"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e5e5e5"></LinearLayout>
+<!--联系方式-->
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系方式"/>
+        <EditText
+            android:id="@+id/act_add_address_phoneId"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"
+            android:hint="请输入你的手机号"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e5e5e5"></LinearLayout>
+
+    <!--收货地址-->
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货地址"/>
+        <ImageView
+            android:id="@+id/act_add_address_location_imagId"
+            android:layout_marginLeft="5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="5dp"
+            android:src="@mipmap/place"/>
+        <EditText
+            android:id="@+id/act_add_address_location_address"
+            android:textSize="20sp"
+            android:hint="请输入地址"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/act_add_address_location_arrowId"
+            android:padding="7dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/disclosure_arrow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e5e5e5"></LinearLayout>
+
+    <!--详细地址-->
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细地址"/>
+        <EditText
+            android:id="@+id/act_add_address_detail_addressId"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"
+            android:hint="请输入门牌号等信息"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e5e5e5"></LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设为默认地址: "
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <CheckBox
+            android:layout_marginRight="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/act_mall_shop_newaddress_check"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e5e5e5"></LinearLayout>
+    <Button
+        android:id="@+id/act_add_address_save_addressId"
+        android:layout_marginTop="20dp"
+        android:text="保存"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/btn_pay"/>
+</LinearLayout>

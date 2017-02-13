@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#e5e5e5"
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vmediacn.com.activity.find.ActSearch">
+    <LinearLayout
+        android:gravity="center_vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:background="#ff5d5d"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:focusable="true"
+            android:clickable="true"
+            android:id="@+id/head_title_search_backIgId"
+            android:layout_margin="5dp"
+            android:background="@mipmap/bg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            >
+            <LinearLayout
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal"
+                android:id="@+id/act_search_spinnerLayId"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+            </LinearLayout>
+            <EditText
+                android:hint="请输入内容"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/head_title_view_search_EtId"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+            <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/head_title_view_search_searchIBd"
+                android:padding="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#ffffff"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/search"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:textSize="20dp"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:id="@+id/head_title_view_search_menuId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/act_search_resultLayId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门搜索"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="#d5d5d5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </LinearLayout>
+
+    <vmediacn.com.ui.ItemContainer
+        android:visibility="gone"
+        android:id="@+id/head_title_view_search_remenLaycontainerId"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+    </vmediacn.com.ui.ItemContainer>
+    <GridView
+        android:padding="2dp"
+        android:background="#ffffff"
+        android:numColumns="3"
+        android:id="@+id/act_search_gridViewId"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"></GridView>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索历史"/>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#d5d5d5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </LinearLayout>
+        <ListView
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/act_search_listViewId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+        <LinearLayout
+            android:background="#d5d5d5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/act_search_clearhistoryLayId"
+            android:gravity="center_horizontal|center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:textColor="#666666"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清除历史记录"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

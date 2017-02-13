@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#e5e5e5"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vmediacn.com.activity.mine.ActCharge">
+
+    <include layout="@layout/head_title_main" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+
+            android:id="@+id/act_chagee_relayId"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:id="@+id/act_charge_bankName1Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="银行卡"/>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/act_charge_bankName1Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_toRightOf="@+id/act_charge_bankName1Id"
+                        android:id="@+id/act_charge_bankNameId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工商银行（10001)"/>
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@+id/act_charge_bankNameId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3到5个工作日到账"/>
+
+                </LinearLayout>
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/disclosure_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"></LinearLayout>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额（元）"/>
+        <EditText
+            android:inputType="number"
+            android:id="@+id/act_chagee_editId"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入金额"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"></LinearLayout>
+
+    <Button
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:id="@+id/act_chagee_nextBtnId"
+        android:layout_margin="10dp"
+        android:background="@mipmap/btn_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"/>
+</LinearLayout>

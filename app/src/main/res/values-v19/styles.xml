@@ -1,0 +1,31 @@
+<resources>
+
+    <!--
+        Base application theme for API 19+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 19+ devices.
+    -->    
+    <!--<style name="ActionBarTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowTranslucentNavigation" >true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        &lt;!&ndash; toolbar（actionbar）颜色 &ndash;&gt;
+        <item name="colorPrimary">#ff5d5d</item>
+        &lt;!&ndash; 状态栏颜色 &ndash;&gt;
+        <item name="colorPrimaryDark">#ff5d5d</item>
+
+    </style>-->
+
+    <style name="ActionBarTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowTranslucentNavigation" >true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <!-- toolbar（actionbar）颜色 -->
+        <item name="colorPrimary">#ff5d5d</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">#ff5d5d</item>
+
+    </style>
+
+    <color name="white">#ffffff</color>
+    <color name="blanck">#000000</color>
+    <color name="main_color">#ff5d5d</color>
+</resources>

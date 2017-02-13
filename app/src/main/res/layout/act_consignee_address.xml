@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#e5e5e5"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="vmediacn.com.activity.mine.ActConsigneeAddress">
+
+    <include layout="@layout/head_title_main" />
+<com.baoyz.swipemenulistview.SwipeMenuListView
+    android:layout_weight="1"
+    android:id="@+id/act_mine_consignee_address_listViewId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</com.baoyz.swipemenulistview.SwipeMenuListView>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/add"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加收货地址"/>
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/disclosure_arrow"/>
+    </LinearLayout>
+
+</LinearLayout>

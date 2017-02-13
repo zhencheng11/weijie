@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vmediacn.com.ui.KeyBoardLayout
+    android:id="@+id/main_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_weight="1"
+        android:id="@+id/act_main_frameLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></FrameLayout>
+    <RadioGroup
+        android:id="@+id/act_main_goupId"
+        android:background="#f3f3f3"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <RadioButton
+            android:clickable="true"
+            android:checked="true"
+            android:layout_marginTop="5dp"
+            android:id="@+id/act_main_rb_weijieId"
+            android:gravity="center"
+            android:drawableTop="@drawable/act_main_selector_bg_weijie"
+            android:text="微街"
+            android:textColor="@color/color_radiobutton"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:clickable="true"
+            android:layout_marginTop="5dp"
+            android:id="@+id/act_main_rb_findId"
+            android:gravity="center"
+            android:drawableTop="@drawable/act_main_selector_bg_find"
+            android:text="发现"
+            android:textColor="@color/color_radiobutton"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:clickable="true"
+            android:layout_marginTop="5dp"
+            android:id="@+id/act_main_rb_orderId"
+            android:gravity="center"
+            android:drawableTop="@drawable/act_main_selector_bg_order"
+            android:text="订单"
+            android:textColor="@color/color_radiobutton"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:clickable="true"
+            android:layout_marginTop="5dp"
+            android:id="@+id/act_main_rb_mineId"
+            android:gravity="center"
+            android:drawableTop="@drawable/act_main_selector_bg_mine"
+            android:text="我的"
+            android:textColor="@color/color_radiobutton"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </RadioGroup>
+    </LinearLayout>
+
+</vmediacn.com.ui.KeyBoardLayout>

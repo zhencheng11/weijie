@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="#EDEDED" >
+    <Button android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="请选择省份"
+        android:id="@+id/item_citychoice_province"/>
+    <Button android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="请选择市"
+        android:id="@+id/item_citychoice_city"/>
+    <Button android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="请选择县"
+        android:id="@+id/item_citychoice_name"/>
+    <Button android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="确  定"
+        android:id="@+id/item_citychoice_put"/>
+</LinearLayout>

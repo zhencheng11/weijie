@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_pit_home_cancel"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_pop_pit_home_menu"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/tv_pit_home_menu_cancel"
+                android:layout_margin="15dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="21sp"
+                android:text="取消"
+                android:textColor="#00aaee"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_above="@id/ll_pit_home_cancel"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_pop_pit_home_menu"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/tv_pit_home_menu_camera"
+                android:layout_margin="15dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="21sp"
+                android:text="拍照"
+                android:textColor="#00aaee"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="#f2f2f2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/tv_pit_home_menu_album"
+                android:layout_margin="15dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="21sp"
+                android:text="从相册选择"
+                android:textColor="#00aaee"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:visibility="gone"
+                android:background="#f2f2f2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:visibility="gone"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/tv_pit_home_menu_sys"
+                android:layout_margin="15dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="21sp"
+                android:text="系统头像"
+                android:textColor="#00aaee"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

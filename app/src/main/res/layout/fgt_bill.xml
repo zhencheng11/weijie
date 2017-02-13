@@ -1,0 +1,27 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="vmediacn.com.fragment.FgtBill">
+
+    <include layout="@layout/head_title_main" />
+    <vmediacn.com.ui.pulltorefrush.MyXListView
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:id="@+id/fgt_bill_listViewId"
+        android:dividerHeight="10dp"
+        android:divider="#eeeeee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </vmediacn.com.ui.pulltorefrush.MyXListView>
+    <TextView
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bill_noContentId"
+        android:text="没有数据"/>
+
+</LinearLayout>

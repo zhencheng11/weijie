@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:background="#666666"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/fgt_find_shop_detail_product_cartImagId"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/icon_shopping_cart"/>
+        <TextView
+            android:layout_alignBottom="@+id/fgt_find_shop_detail_product_cartallMoneyId"
+            android:id="@+id/fgt_find_shop_detail_product_monneyFuhaoId"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@+id/fgt_find_shop_detail_product_cartImagId"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥"/>
+
+        <TextView
+            android:layout_alignTop="@+id/fgt_find_shop_detail_product_cartImagId"
+            android:gravity="center"
+            android:id="@+id/fgt_find_shop_detail_product_cartallMoneyId"
+            android:layout_toRightOf="@+id/fgt_find_shop_detail_product_monneyFuhaoId"
+            android:textSize="27sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="69"/>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/fgt_find_shop_detail_product_payId"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:background="@mipmap/btn_pay"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="确定"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:gravity="center"
+        android:padding="2dp"
+        android:textSize="11sp"
+        android:id="@+id/fgt_find_shop_detail_product_cartcountId"
+        android:textColor="#ffffff"
+        app:layout_marginTopPercent="10%"
+        android:background="@drawable/detail_comment_count_shap"
+        app:layout_marginLeftPercent="8%"/>
+</android.support.percent.PercentRelativeLayout>

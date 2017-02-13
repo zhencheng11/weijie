@@ -1,0 +1,56 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vmediacn.com.fragment.find.FindFgtShopDetailProduct">
+
+
+    <LinearLayout
+        android:layout_marginBottom="60dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ListView
+    android:id="@+id/fgt_find_shop_detail_product_type_listViewId"
+    android:layout_width="80dp"
+    android:dividerHeight="2dp"
+    android:layout_height="match_parent"></ListView>
+
+        <TextView
+            android:background="#e5e5e5"
+            android:textColor="#e5e5e5"
+            android:layout_width="2dp"
+            android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/fgt_find_shop_detail_product_titleId"
+            android:textColor="#666666"
+            android:background="#e5e5e5"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text=""/>
+    <ListView
+        android:layout_marginLeft="2dp"
+        android:id="@+id/fgt_find_shop_detail_product_gridViewId"
+        android:layout_width="match_parent"
+        android:dividerHeight="1.5dp"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cartLayId"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <include layout="@layout/shopping_cart_lay" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vmediacn.com.activity.mine.AddressLocation">
+    <LinearLayout
+        android:gravity="center_vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:background="#ff5d5d"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:focusable="true"
+            android:clickable="true"
+            android:id="@+id/address_location_backId"
+            android:layout_margin="5dp"
+            android:background="@mipmap/bg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            >
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="left|center"
+                android:src="@mipmap/place_dark_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:hint="请输入收货地址"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/address_location_searchEtId"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+            <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/address_location_deleteId"
+                android:padding="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#ffffff"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/btn_delete"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/address_location_listViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <ListView
+        android:visibility="gone"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/address_location_searchlistViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+    <TextView
+        android:id="@+id/address_location_searcNocontentId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="没有数据"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+</LinearLayout>

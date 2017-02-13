@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <TextView
+        android:id="@+id/wschoose_merchant_item_nameTvId"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="title"
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>

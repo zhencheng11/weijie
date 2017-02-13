@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.weijie.ActWeiJieShopDetail">
+    <LinearLayout
+        android:id="@+id/topLayId"
+        android:background="#ff5d5d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/act_shop_detail_backImagId"
+                android:layout_marginLeft="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/bg_back"/>
+
+            <TextView
+                android:id="@+id/act_shop_detail_shopTitleId"
+                android:textSize="26sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BHG生活超市"/>
+
+
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/btn_call"/>
+
+
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/act_shop_detail_collectId"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/btn_favorite_def"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/act_shop_detail_shopPhotoId"
+                android:scaleType="fitXY"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/tempview"/>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/act_shop_detail_shopPhotoId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--星级-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@mipmap/star_sel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ImageView
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@mipmap/star_sel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ImageView
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@mipmap/star_sel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ImageView
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@mipmap/star_sel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ImageView
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@mipmap/star_sel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/act_shop_detail_shopQiSongJiaId"
+                        android:textSize="13sp"
+                        android:textColor="#ffffff"
+                        android:text="起送89元"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#ffffff"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/act_shop_detail_shopFrightId"
+                        android:textSize="13sp"
+                        android:textColor="#ffffff"
+                        android:text="配送费88元"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#ffffff"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/act_shop_detail_timeId"
+                        android:textSize="13sp"
+                        android:textColor="#ffffff"
+                        android:text="约10分钟"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+<!---->
+                <LinearLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/act_shop_detail_shopPruductCountId"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:textColor="#ffffff"
+                        android:text="88件商品"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#ffffff"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/act_shop_detail_shopYueShouId"
+                        android:textSize="13sp"
+                        android:textColor="#ffffff"
+                        android:text="月售9999件"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/act_shop_detail_tabLayoutId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabSelectedTextColor="#FF5D5d"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+           >
+        </android.support.design.widget.TabLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/act_shop_detail_frameLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</LinearLayout>
